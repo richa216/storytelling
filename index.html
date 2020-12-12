@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+
+
+</head>
+
+
+
+
+
+
+<body>
+   <div class="back">
+   	<div class="card card1" >
+		<img src="logo.png">
+		
+
+		
+
+		
+	</div>
+
+    <div class="card card2">
+
+        <h2>Complete the Form-<br>Complete the Story </h2>
+        <div class="border1"></div>
+
+        <form  action="story2.html">
+            <label>Animal:</label>
+            <input type="text" value="John" id="animal" name="tiger"><br> <br>
+
+            <label>Another Animal:</label>
+            <input type="text" value="Doe" id="anotheranimal"><br> <br>
+
+            <label>One More Animal:</label>
+            <input type="text" id="dog" name="fname" value="John"><br> <br>
+
+            <label>Adjective(past tesnse):</label>
+            <input type="text" value="Doe" id="adj"><br> <br>
+
+            <label>Verbs(ends in -ing):</label>
+            <input type="text" id="running" name="fname" value="running"><br> <br>
+
+            <label>Number:</label>
+            <input type="text" value="2" id="two"><br> <br>
+
+            <label>Yes or NO:</label>
+             <select id="yn">
+                <option>
+                    yes
+                </option>
+                <option>
+                    No
+                </option>
+            </select>
+          <br> <br>
+
+            <label>Relative speed(ens in -er)</label>
+            <select id="re">
+                <option>
+                    quicker
+                </option>
+                <option>
+                    slower
+                </option>
+            </select>
+            <br> <br>
+
+            <label>Motivational Quote:</label>
+            <input type="text" id="mo" name="fname" value="example"><br> <br>
+
+            <label>Meaningful Message:</label> <br> <br>
+            <textarea id="text" style="width: 20vw;height: 8vw;border:2px solid blue;">This is messagebox
+            </textarea> <br> <br>
+
+            <input type="submit" name="sub" value="click" onclick="passvalue(); " style="width: 100px;margin-bottom: 30px;">
+        
+
+        </form>
+       
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+        function passvalue()
+        {
+            var animal1 = document.getElementById("animal").value;
+            localStorage.setItem("textvalue",animal1);
+          
+           
+
+            var animal2 = document.getElementById("anotheranimal").value;
+            localStorage.setItem("textvalue1",animal2);
+
+             var run= document.getElementById("running").value;
+            localStorage.setItem("textvalue2",run);
+
+
+
+             var dogs= document.getElementById("dog").value;
+            localStorage.setItem("textvalue3",dogs);
+
+
+
+             var adjec= document.getElementById("adj").value;
+            localStorage.setItem("textvalue4",adjec);
+
+             var mov= document.getElementById("mo").value;
+            localStorage.setItem("textvalue5",mov);
+
+             var num= document.getElementById("two").value;
+            localStorage.setItem("textvalue6",num);
+
+
+              var num2= document.getElementById("re").value;
+            localStorage.setItem("textvalue7",num2);
+
+
+             var num3= document.getElementById("yn").value;
+            localStorage.setItem("textvalue8",num3);
+
+
+            var num4= document.getElementById("text").value;
+            localStorage.setItem("textvalue9",num4);
+
+            return false;
+        }
+   </script>
+
+
+
+</body>
+</html>
